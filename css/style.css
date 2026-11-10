@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.headerPart{
+    padding: 40px;
+    background-color: maroon;
+}
+.manu ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+   
+}
+.manu ul li a{
+    color: white;
+    font-size: 23px;
+    text-transform: uppercase;
+    transition:.4s;
+    font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+.manu ul li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    content: "";
+    transition: .4s;    
+}
+
+.manu ul li a:hover{
+    color:black;
+}
+.manu ul li a:hover::after{
+    width: 100%;  
+      
+}
+.manu ul li a::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    content: "";
+    transition: .4s;    
+}
+.manu ul li a:hover::before{
+    width: 100%;  
+}
